@@ -1,11 +1,12 @@
 #include <stdio.h>
+
 int main(){
-	long int a,b;
+	float a,b;
 	printf("tapper le 1er nombre entier :  ");
-	scanf("%ld",&a);	
+	scanf("%f",&a);	
 
 	printf("tapper le 2ieme nombre entier :  ");
-	scanf("%ld",&b);
+	scanf("%f",&b);
 	
-	printf("a-b = %ld\na+b = %ld\na*b = %ld\na/b = %ld\na%b = %ld\n", a-b, a+b, a*b, a/b, a % b);
+	printf("a-b = %f\na+b = %f\na*b = %f\na/b = %f\na%b = %d\n", a-b, a+b, a*b, a/b,(int)a%(int)b);
 }
