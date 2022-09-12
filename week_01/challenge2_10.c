@@ -8,9 +8,9 @@ int main(){
     scanf("%s", date);
     char i = date[3];
     if(i  == '0')
-    printf("%c%c-%s-%c%c%c%c",date[0],date[1],mois[(int)i-48],date[6],date[7],date[8],date[9]);
+    printf("%c%c-%s-%c%c%c%c",date[0],date[1],mois[(int)date[4]-49],date[6],date[7],date[8],date[9]);
 
-    else if (i == '1'){
+    else if (i != '0'){
         char index = date[4];
         printf("%c%c-%s-%c%c%c%c",date[0],date[1],mois[(int)index-39],date[6],date[7],date[8],date[9]);
 

@@ -9,10 +9,9 @@ int main(){
     scanf("%f%f", &Xc, &Yc);
 //    printf("%f%f%f%f%f", Xa, Xm, Ya, Ym, Xc);
 
-    AM = sqrt(pow(Xa,2)-pow(Xm,2)+pow(Ya,2)-pow(Ym,2));
-    printf("%f", AM);
-    AC = sqrt(pow(Xa,2)-pow(Xc,2)+pow(Ya,2)-pow(Yc,2));
-    CM = sqrt(pow(Xc,2)-pow(Xm,2)+pow(Ym,2)-pow(Yc,2));
-//    AM !=(AC+CM) ? printf("no9ta makayncach f segment") : printf("no9ta kayna f segment");
-    printf("%f", AM);
+    AM = sqrt(pow((Xa-Xm),2)+pow((Xa-Xm),2));
+    AC = sqrt(pow((Xa-Xc),2)+pow((Xa-Xc),2));
+    CM = sqrt(pow((Xc-Xm),2)+pow((Xc-Xm),2));
+    AM !=(AC+CM) ? printf("le point C appartient au segment AM") : printf("le point C appartient au segment AM");
+
 }
