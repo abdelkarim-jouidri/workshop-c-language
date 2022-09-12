@@ -1,8 +1,9 @@
 #include<stdio.h>
 #include<math.h>
+#include<time.h>
 int main(){
     int integer;
-    int number = time(0);
+    int number = time(NULL);
     int random = number % 7; 
     switch(random){
     	case 0 : 
